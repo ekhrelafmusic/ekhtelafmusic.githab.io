@@ -1,0 +1,261 @@
+/* تنظیمات اولیه */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #242222;
+    color: #f0dfdf;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* هدر سایت */
+#heder {
+    width: 100%;
+    height: 70px;
+    background-color: #a76997;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#ef13 {
+    font-size: 24px;
+    color: #f0dfdf;
+}
+
+#t {
+    color: #f0dfdf;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+#t:hover {
+    transform: scale(1.1);
+}
+
+/* خوش‌آمدگویی */
+.welcome {
+    text-align: center;
+    margin: 30px auto;
+    color: #f0dfdf;
+    animation: fadeInDown 0.5s ease-out;
+}
+
+/* چیدمان اصلی */
+.main-container {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* ستون راست (منو) */
+.aside {
+    width: 280px;
+    background-color: rgba(75, 110, 141, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: slideInRight 0.5s ease-out;
+}
+
+.aside ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.aside ul li {
+    margin-bottom: 12px;
+}
+
+.aside a {
+    color: #f0dfdf;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.aside a:hover {
+    background-color: #242222;
+    color: #a76997;
+    padding-right: 18px;
+}
+
+.kh {
+    color: #f3a863;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #a76997;
+    padding-bottom: 5px;
+}
+
+/* ستون محتوا */
+.content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+/* بخش بنر و ویدیو */
+.divbn {
+    background-color: #333030;
+    border: 2px solid #a76997;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tm {
+    color: #f3a863;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.tt {
+    border: 1px solid #f3a863;
+    margin-bottom: 20px;
+}
+
+.vidbn {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.abn {
+    display: inline-block;
+    color: #f0dfdf;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #f0dfdf;
+    background-color: #a76997;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.abn:hover {
+    background-color: #f0dfdf;
+    color: #a76997;
+}
+
+/* کارت موزیک‌ها */
+.music-card {
+    background-color: #333030;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(167, 105, 151, 0.25);
+}
+
+.music-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.music-card a {
+    color: #f0dfdf;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #a76997;
+    background-color: #a76997;
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.music-card a:hover {
+    background-color: #f0dfdf;
+    color: #a76997;
+}
+
+/* فوتر */
+footer {
+    background-color: #a76997;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 8px 8px 0 0;
+}
+
+.چنلتلگرام {
+    color: #f0dfdf;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #242222;
+    padding: 8px 25px;
+    border-radius: 5px;
+    background-color: #242222;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.چنلتلگرام:hover {
+    background-color: #f0dfdf;
+    color: #242222;
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* تنظیمات مخصوص گوشی‌ها */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .aside {
+        width: 100%;
+    }
+}
